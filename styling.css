@@ -1,7 +1,9 @@
 /* Body:
 -Give the body element a relative position for the scrollspy to work.
 -Add a font family to the whole page */
-
+body {
+  font-family: 'Vollkorn', serif;
+}
 /* Video:
 -Set the video as background, make it fixed.
 -Make sure it appears behind all elements.
@@ -15,8 +17,6 @@ video#bgvideo {
 /* Video does not work in small devices.
 -Hide the video and set picture as background (use media queries).
 -Make it spread across the whole webpage. */
-
-/* Style the navigation bar using a navbar css generator */
 
 /* Style the home section and elements inside it.
 -Reduce the margin bottom of h1 and h2.
@@ -36,3 +36,131 @@ video#bgvideo {
 /* Style the pictures and nav-brand for different screens */
 
 /* Style the footer */
+
+/* Style the navigation bar using a navbar css generator */
+.navbar-custom {
+  background-color: #09240a;
+  border-color: #020903;
+  background-image: -webkit-gradient(
+    linear,
+    left 0%,
+    left 100%,
+    from(#134d15),
+    to(#09240a)
+  );
+  background-image: -webkit-linear-gradient(top, #134d15, 0%, #09240a, 100%);
+  background-image: -moz-linear-gradient(top, #134d15 0%, #09240a 100%);
+  background-image: linear-gradient(to bottom, #134d15 0%, #09240a 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff134d15', endColorstr='#ff09240a', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #020903;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #c0c0c0;
+  border-left: 1px solid #020903;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #020903;
+  background-image: -webkit-gradient(
+    linear,
+    left 0%,
+    left 100%,
+    from(#020903),
+    to(#0d320e)
+  );
+  background-image: -webkit-linear-gradient(top, #020903, 0%, #0d320e, 100%);
+  background-image: -moz-linear-gradient(top, #020903 0%, #0d320e 100%);
+  background-image: linear-gradient(to bottom, #020903 0%, #0d320e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff020903', endColorstr='#ff0d320e', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #020702;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #020903;
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #c0c0c0;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #020903;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #c0c0c0;
+}
+.navbar-custom .navbar-link:hover {
+  color: #ffffff;
+}
