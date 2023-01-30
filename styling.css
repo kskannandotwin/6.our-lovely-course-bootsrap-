@@ -2,7 +2,7 @@
 -Give the body element a relative position for the scrollspy to work.
 -Add a font family to the whole page */
 body {
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
 }
 /* Video:
 -Set the video as background, make it fixed.
@@ -21,6 +21,32 @@ video#bgvideo {
 /* Style the home section and elements inside it.
 -Reduce the margin bottom of h1 and h2.
 -Style the button and ints hover state. */
+#home {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding-top: 15%;
+}
+
+#home h1 {
+  margin-bottom: 30px;
+}
+
+#home h2 {
+  margin-bottom: 50px;
+}
+
+#home .btn {
+  background-color: rgb(29, 167, 179);
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+#home .btn:hover {
+  background-color: rgba(29, 167, 179, 0.5);
+}
 
 /* Style the about section:
 -Add padding-top so that the nav link is active before the carousel hits the top border of the page.
