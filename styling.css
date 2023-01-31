@@ -81,6 +81,27 @@ video#bgvideo {
 -Set the height of pictures and center them inside the carousel items.
 -Move the carousel caption under the picutres. */
 
+#promise {
+  padding-top: 100px;
+}
+
+#myCarousel {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carousel-inner .item img {
+  height: 400px;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  height: 200px;
+}
+
 /* Style the pictures and nav-brand for different screens */
 
 /* Style the footer */
