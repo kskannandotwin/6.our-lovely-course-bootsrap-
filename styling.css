@@ -14,9 +14,20 @@ video#bgvideo {
   min-width: 100%;
   z-index: -100;
 }
+
 /* Video does not work in small devices.
 -Hide the video and set picture as background (use media queries).
 -Make it spread across the whole webpage. */
+@media (max-width: 768px) {
+  body {
+    background: url(https://images.pexels.com/photos/106006/pexels-photo-106006.jpeg) center center fixed;
+    background-size: cover;
+  }
+
+  #bgvideo {
+    display: none;
+  }
+}
 
 /* Style the home section and elements inside it.
 -Reduce the margin bottom of h1 and h2.
@@ -103,6 +114,29 @@ video#bgvideo {
 }
 
 /* Style the pictures and nav-brand for different screens */
+@media (max-width: 768px) {
+  .carousel-inner .item img {
+    height: 300px;
+  }
+
+  .carousel-inner h2 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-inner .item img {
+    height: 200px;
+  }
+
+  .carousel-inner h2 {
+    font-size: 17px;
+  }
+
+  .navbar-brand {
+    font-size: 12px;
+  }
+}
 
 /* Style the footer */
 
