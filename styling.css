@@ -3,6 +3,7 @@
 -Add a font family to the whole page */
 body {
   font-family: "Vollkorn", serif;
+  position: relative;
 }
 /* Video:
 -Set the video as background, make it fixed.
@@ -114,7 +115,7 @@ video#bgvideo {
 }
 
 /* Style the pictures and nav-brand for different screens */
-@media (max-width: 768px) {
+@media (max-device-width: 768px) {
   .carousel-inner .item img {
     height: 300px;
   }
@@ -139,6 +140,13 @@ video#bgvideo {
 }
 
 /* Style the footer */
+.footer {
+  background-color: rgba(29, 167, 179, 0.1);
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 150px;
+  font-size: 15px;
+}
 
 /* Style the navigation bar using a navbar css generator */
 .navbar-custom {
